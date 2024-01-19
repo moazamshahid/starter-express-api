@@ -8,6 +8,10 @@ app.all('/', (req, res) => {
 
 
 app.use(express.json());
+app.use("/",require('./routes/userRoutes'))
+
+
+
 app.use(bodyParser.json());
 app.get("/getAPi",(req,res)=>{
 
