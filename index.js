@@ -6,7 +6,8 @@ app.all('/', (req, res) => {
 })
 
 
-
+app.use(express.json());
+app.use(bodyParser.json());
 app.get("/getAPi",(req,res)=>{
 
 const name= req.body.name;
