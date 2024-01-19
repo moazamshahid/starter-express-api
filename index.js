@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const bodyParser = require('body-parser');
 app.all('/', (req, res) => {
     console.log("Just got a request!")
     res.send('sharjeel anjum Nodejs Developer ')
